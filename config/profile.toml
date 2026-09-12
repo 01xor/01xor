@@ -1,0 +1,56 @@
+[profile]
+login = "01xor"
+display_name = "01xor"
+role = "Computer Science & Mathematics student"
+summary = "Focused on cybersecurity, blockchain and systems."
+philosophy = "Understand systems from the inside out — how they are built, how they fail, and how they can be secured."
+
+[[focus]]
+name = "CYBERSECURITY"
+description = "offensive security · CVEs · PoCs · attack surfaces"
+
+[[focus]]
+name = "BLOCKCHAIN"
+description = "decentralized systems · protocols · smart contracts"
+
+[[focus]]
+name = "SYSTEMS"
+description = "architecture · internals · failure modes"
+
+[[focus]]
+name = "SOFTWARE"
+description = "tools · experiments · useful systems"
+
+[[focus]]
+name = "MATHEMATICS"
+description = "logic · structure · abstraction · problem solving"
+
+[[projects]]
+name = "ai-jailbreak-archive"
+description = "AI security · jailbreaks · prompt injection · adversarial behavior"
+url = "https://github.com/01xor/ai-jailbreak-archive"
+
+# Add only achievements you actually have.
+# [[achievements]]
+# platform = "GITHUB"
+# title = "PULL SHARK"
+# level = "x2"
+# note = "Pull requests merged"
+
+[[signals]]
+platform = "GITHUB"
+handle = "01xor"
+status = "CODE"
+url = "https://github.com/01xor"
+
+[[signals]]
+platform = "KICK"
+handle = "0x01-xor"
+status = "STREAM"
+url = "https://kick.com/0x01-xor"
+
+[[signals]]
+platform = "INSTAGRAM"
+handle = "0x01_xor"
+status = "SOCIAL"
+url = "https://instagram.com/0x01_xor"

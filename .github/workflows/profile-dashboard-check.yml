@@ -1,0 +1,36 @@
+name: Profile Dashboard Check
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "assets/**"
+      - "config/profile.toml"
+      - "scripts/generate_dashboard.py"
+      - ".github/workflows/profile-dashboard*.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render offline dashboard
+        run: python scripts/generate_dashboard.py --offline
+
+      - name: Validate SVG XML
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          ET.parse("assets/dashboard.svg")
+          print("OK assets/dashboard.svg")
+          PY

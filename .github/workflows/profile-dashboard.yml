@@ -1,0 +1,53 @@
+name: Profile Dashboard
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "config/profile.toml"
+      - "scripts/generate_dashboard.py"
+      - ".github/workflows/profile-dashboard.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-dashboard
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate single dashboard SVG
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: python scripts/generate_dashboard.py
+
+      - name: Commit refreshed dashboard
+        run: |
+          if git diff --quiet -- assets/dashboard.svg; then
+            echo "No dashboard changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/dashboard.svg
+          git commit -m "chore: refresh profile dashboard"
+          git push
