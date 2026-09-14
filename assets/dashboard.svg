@@ -276,7 +276,7 @@
   font-size="17"
   letter-spacing="1.1"
   fill="#90909000"
->LAST SYNC :: 2026-09-13 08:19 UTC</text>
+>LAST SYNC :: 2026-09-14 08:56 UTC</text>
 
 
 <rect
@@ -296,7 +296,7 @@
   font-weight="800"
   fill="#F2F2F2"
   filter="url(#glow)"
->8.466</text>
+>8.248</text>
 
 
 <text
@@ -326,7 +326,7 @@
   font-size="42"
   font-weight="700"
   fill="#F2F2F2"
->8</text>
+>9</text>
 
 <line
   x1="664"
@@ -353,7 +353,7 @@
   font-size="42"
   font-weight="700"
   fill="#F2F2F2"
->190</text>
+>191</text>
 
 <line
   x1="894"
@@ -426,7 +426,7 @@
   font-size="42"
   font-weight="700"
   fill="#C1123F"
->2 DAYS</text>
+>3 DAYS</text>
 
 <line
   x1="894"
@@ -485,7 +485,7 @@
   font-size="17"
   letter-spacing="1.1"
   fill="#909090"
->2025-09-07 → 2026-09-13</text>
+>2025-09-14 → 2026-09-14</text>
 
 
 <rect
@@ -3779,6 +3779,15 @@
   width="15"
   height="15"
   rx="2"
+  fill="#310A14"
+/>
+
+<rect
+  x="1100"
+  y="670"
+  width="15"
+  height="15"
+  rx="2"
   fill="#120609"
 />
 
@@ -4110,7 +4119,7 @@
   font-size="22"
   font-weight="700"
   fill="#F2F2F2"
->0x01xor</text>
+>0x01-xor</text>
 
 
 <text
@@ -4156,7 +4165,7 @@
   font-size="22"
   font-weight="700"
   fill="#F2F2F2"
->0x01xor</text>
+>0x01_xor</text>
 
 
 <text
