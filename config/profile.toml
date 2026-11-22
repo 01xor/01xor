@@ -30,13 +30,6 @@ name = "ai-jailbreak-archive"
 description = "AI security · jailbreaks · prompt injection · adversarial behavior"
 url = "https://github.com/01xor/ai-jailbreak-archive"
 
-# Add only achievements you actually have.
-# [[achievements]]
-# platform = "GITHUB"
-# title = "PULL SHARK"
-# level = "x2"
-# note = "Pull requests merged"
-
 [[signals]]
 platform = "GITHUB"
 handle = "01xor"
@@ -45,12 +38,12 @@ url = "https://github.com/01xor"
 
 [[signals]]
 platform = "KICK"
-handle = "0x01-xor"
+handle = "0x01xor"
 status = "STREAM"
-url = "https://kick.com/0x01-xor"
+url = "https://kick.com/0x01xor"
 
 [[signals]]
 platform = "INSTAGRAM"
-handle = "0x01_xor"
+handle = "0x01xor"
 status = "SOCIAL"
-url = "https://instagram.com/0x01_xor"
+url = "https://instagram.com/0x01xor"
